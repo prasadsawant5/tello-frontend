@@ -36,16 +36,28 @@
           <h3>3</h3>
         </td>
         <td>
-          <!-- <h3 class="bin">OBJECT1</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf3">
+            <ul *ngIf="item['name'] === 'up1'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
+        </td>
+        <td>
+          <div *ngFor="let item of shelf3">
+            <ul *ngIf="item['name'] === 'bin8'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
         </td>
         <td>
           <!-- <h3 class="bin">OBJECT1</h3><br /><br /><br /> -->
         </td>
         <td>
-          <!-- <h3 class="bin">OBJECT1</h3><br /><br /><br /> -->
-        </td>
-        <td>
-          <!-- <h3 class="bin">COM</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf3">
+            <ul *ngIf="item['name'] === 'com'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
         </td>
       </tr>
       <tr>
@@ -73,7 +85,7 @@
         <td>
           <!-- <h3 class="bin">bin5</h3><br /><br /><br /> -->
           <div *ngFor="let item of shelf2">
-            <ul *ngIf="item['name'] === 'bin5'">
+            <ul *ngIf="item['name'] === 'bin6'">
               <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
             </ul>
           </div>

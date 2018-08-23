@@ -37,7 +37,7 @@ export class AppComponent implements OnInit, OnDestroy {
                   this.shelf1.push(this.items[i]);
                 } else if (this.items[i]['name'] === 'bin1' || this.items[i]['name'] === 'bin6' || this.items[i]['name'] === 'Object 1' || this.items[i]['name'] === 'up1') {
                   this.shelf2.push(this.items[i]);
-                } else if (this.items[i]['name'] === 'com') {
+                } else if (this.items[i]['name'] === 'com' || this.items[i]['name'] === 'bin8') {
                   this.shelf3.push(this.items[i]);
                 }
               }
