@@ -1,0 +1,149 @@
+<h1 class="mat-display-1">Warehouse Management</h1>
+
+<div>
+  <!-- <div *ngFor="let bin of items"> -->
+  <!-- <mat-card class="example-card" *ngFor="let item of bin.items">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title><b>{{ bin.name }}</b></mat-card-title>
+            <mat-card-subtitle>{{ item }}</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card> -->
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">
+          <h2>Shelf</h2>
+        </th>
+        <th scope="col">
+          <h2>bin # 1</h2>
+        </th>
+        <th scope="col">
+          <h2>bin # 2</h2>
+        </th>
+        <th scope="col">
+          <h2>bin # 3</h2>
+        </th>
+        <th scope="col">
+          <h2>bin # 4</h2>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <h3>3</h3>
+        </td>
+        <td>
+          <!-- <h3 class="bin">OBJECT1</h3><br /><br /><br /> -->
+        </td>
+        <td>
+          <!-- <h3 class="bin">OBJECT1</h3><br /><br /><br /> -->
+        </td>
+        <td>
+          <!-- <h3 class="bin">OBJECT1</h3><br /><br /><br /> -->
+        </td>
+        <td>
+          <!-- <h3 class="bin">COM</h3><br /><br /><br /> -->
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>2</h3>
+        </td>
+        <td>
+          <!-- <h3 class="bin">up1</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf2">
+            <ul *ngIf="item['name'] === 'up1'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
+
+        </td>
+        <td>
+          <!-- <h3 class="bin">OBJECT1</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf2">
+            <ul *ngIf="item['name'] === 'Object 1'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
+
+        </td>
+        <td>
+          <!-- <h3 class="bin">bin5</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf2">
+            <ul *ngIf="item['name'] === 'bin5'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
+
+        </td>
+        <td>
+          <!-- <h3 class="bin">bin1</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf2">
+            <ul *ngIf="item['name'] === 'bin1'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h3>1</h3>
+        </td>
+        <td>
+          <!-- <h3 class="bin">bin9</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf1">
+            <ul *ngIf="item['name'] === 'bin9'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
+        </td>
+        <td>
+          <!-- <h3 class="bin">bin4</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf1">
+            <ul *ngIf="item['name'] === 'bin4'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+            </ul>
+          </div>
+        </td>
+        <td>
+          <!-- <h3 class="bin">bin3</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf1">
+            <ul *ngIf="item['name'] === 'bin3'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+              <!-- <mat-card class="example-card">
+                <mat-card-header *ngFor="let it of item['items']">
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title><b>{{ it }}</b></mat-card-title>
+                </mat-card-header>
+              </mat-card> -->
+            </ul>
+          </div>
+
+        </td>
+        <td>
+          <!-- <h3 class="bin">up</h3><br /><br /><br /> -->
+          <div *ngFor="let item of shelf1">
+            <ul *ngIf="item['name'] === 'up'">
+              <li *ngFor="let it of item['items']"><h3>{{ it }}</h3></li>
+              <!-- <mat-card class="example-card">
+                <mat-card-header *ngFor="let it of item['items']">
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title><b>{{ it }}</b></mat-card-title>
+                </mat-card-header>
+              </mat-card> -->
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- <div *ngIf="!flag">
+  <h2 class="mat-display-2">No items present in the bins</h2>
+</div> -->
