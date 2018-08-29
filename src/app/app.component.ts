@@ -70,6 +70,16 @@ export class AppComponent implements OnInit, OnDestroy {
       });
   }
 
+  clearDb(): void {
+    this.serverService.clearDb()
+      .subscribe(
+        res => {
+          console.log(res);
+      },err => {
+        console.error(err);
+      });
+  }
+
   ngOnDestroy() {
     clearInterval(this.interval);
   }

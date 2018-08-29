@@ -25,6 +25,7 @@ import { ServerService } from './service/server.service';
     MatTableModule,
     MatDividerModule,
     MatGridListModule,
+    MatButtonModule,
     HttpClientModule,
   ],
   providers: [ServerService],

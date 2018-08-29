@@ -11,4 +11,8 @@ export class ServerService {
   getConfig() {
     return this.http.get('http://localhost:3000/items');
   }
+
+  clearDb() {
+    return this.http.get('http://localhost:3000/deleteDb')
+  }
 }
