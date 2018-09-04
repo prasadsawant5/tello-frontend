@@ -33,11 +33,11 @@ export class AppComponent implements OnInit, OnDestroy {
               this.shelf3 = [];
 
               for (var i = 0; i < this.items.length; i++) {
-                if (this.items[i]['name'] === 'bin9' || this.items[i]['name'] === 'bin4' || this.items[i]['name'] === 'bin3' || this.items[i]['name'] === 'up') {
+                if (this.items[i]['name'] === '01.01' || this.items[i]['name'] === '01.02' || this.items[i]['name'] === '01.03' || this.items[i]['name'] === '01.04') {
                   this.shelf1.push(this.items[i]);
-                } else if (this.items[i]['name'] === 'bin1' || this.items[i]['name'] === 'bin6' || this.items[i]['name'] === 'Object 1' || this.items[i]['name'] === 'up1') {
+                } else if (this.items[i]['name'] === '02.01' || this.items[i]['name'] === '02.02' || this.items[i]['name'] === '02.03' || this.items[i]['name'] === '02.04') {
                   this.shelf2.push(this.items[i]);
-                } else if (this.items[i]['name'] === 'com' || this.items[i]['name'] === 'bin8') {
+                } else if (this.items[i]['name'] === '03.01' || this.items[i]['name'] === '03.02') {
                   this.shelf3.push(this.items[i]);
                 }
               }

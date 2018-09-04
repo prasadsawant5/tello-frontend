@@ -1,27 +1,12 @@
-# Frontend
+# Welcome to the Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+This is a simple Angular webapp which shows the bins and the items present in the bins in a tabular manner.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## To get the frontend up and running,
+1. Before running the frontend, get the [backend](https://github.com/prasadsawant5/tello-backend) up and rinning.
+2. Install `angular-cli` by running `npm install -g @angular/cli` in the terminal window/command prompt.
+..* For Linux environments, you might have to run `sudo npm install -g @angular/cli`.
+3. Then navigate to the frontend's root directory from the command prompt by typing `cd <frontend's root directory>` in the terminal window/command prompt.
+> __Note__: Please don't type `<frontend's root directory>` in the window. The root directory differs from system to system. On my system, the root directory is `/home/ericsson/Documents/frontend`. It might be something else on your system.
+4. Then run the webapp by typing `ng serve` in the terminal window/command prompt.
+> __Note__: Please keep the terminal window/command prompt open all the time.
