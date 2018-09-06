@@ -31,6 +31,16 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+@font-face { 
+  font-family: "EricssonHildaBold";
+  src: url("assets/fonts/EricssonHilda-Bold.ttf");
+}
+
+@font-face { 
+  font-family: "EricssonHildaRegular";
+  src: url("assets/fonts/EricssonHilda-Regular.ttf");
+}
+
 /* Demo style */
 body { padding: 16px; }
 

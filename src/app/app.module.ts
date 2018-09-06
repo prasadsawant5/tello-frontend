@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatTableModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatTableModule, MatTooltipModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -23,6 +23,7 @@ import { ServerService } from './service/server.service';
     MatCardModule,
     MatCardModule,
     MatTableModule,
+    MatTooltipModule,
     MatDividerModule,
     MatGridListModule,
     MatButtonModule,

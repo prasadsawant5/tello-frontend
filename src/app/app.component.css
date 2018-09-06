@@ -1,19 +1,10 @@
-.example-card {
-  max-width: 400px;
-}
-  
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
+h1 {
+  font-family: 'EricssonHildaBold';
 }
 
 table {
   width: 100%;
   height: 500px;
-}
-th {
-  text-align: center;
-  vertical-align: middle;
 }
 
 tr {
@@ -21,29 +12,63 @@ tr {
 }
 
 td {
-  vertical-align: middle;
+  vertical-align: bottom;
   align-content: center;
   text-align: center;
   width: 500px;
-}
-td:first {
-  vertical-align: middle;
+  padding: 0;
 }
 
 ul {
   list-style: none;
 }
 
+button {
+  width: 350px;
+  height: 50px;
+}
+
+tr.bin-row {
+  border-bottom: 5px solid orange;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+td.bin-cell {
+  vertical-align: bottom;
+  padding: 0;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+h4, p, li {
+  background-color: yellow;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px 30px;
+  font-family: 'EricssonHildaRegular';
+}
+
+div.bins {
+  border: 1px dashed blue;
+  margin: 5px 10px 8px 10px;
+}
+
 
 
 h3.bin {
-  vertical-align: bottom;
-  /* height: 50px; */
-  margin-bottom: -30px;
+  margin: 0 100px -57px 100px;
+  padding: 15px;
+  background-color: blue;
+  color: white;
+  font-family: 'EricssonHildaRegular';
 }
 
 div.button-row {
-  margin-top: 50px;
+  margin-top: 150px;
   text-align: center;
 }
 
